@@ -4,8 +4,8 @@
       <h2 class="section-title">Our Services</h2>
     </div>
     <div class="service_container">
-      <div class="row">
-        <div class="col-md-4">
+      <div class="row ">
+        <div class="col-md-4 ">
           <div class="box b1">
             <div class="img-box">
               <!-- <img src="images/s1.png" alt="" class="" /> -->

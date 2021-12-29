@@ -19,12 +19,13 @@
   <header class="header_section">
     <div class="container">
       <nav class="navbar navbar-expand-lg custom_nav-container ">
-        <a class="navbar-brand  text-white" href="/">
+        <a class="navbar-brand  text-white d-flex align-items-center" href="/">
           <img
             src="https://blogger.googleusercontent.com/img/a/AVvXsEi-JWOvGCAdYsg0KcLYS5CNEfcD79S9vZVWRVDnEvdxU9Tr92Ki5Br-y6vQbpfxGahewNkPTS47EXlPkv7inyfTMXStSrrU_on-rnsCd-hAUr3XdyopommFUvaTpYFj33qtA2WsOyb8u9cflCBAoOHBSYfIIXVZeeQwmmAMAeQ1FmKMopvQemaJfNiEXA=s1200"
             alt="User"
-            class="LogoImage"
+            class="LogoImage "
           />
+          <b class="ms-2">BeNalu Dev</b>
         </a>
 
         <button class="navbar-toggler" type="button" on:click={openNav}>
@@ -35,7 +36,7 @@
           class="collapse navbar-collapse HeaderPosition"
           id="navbarSupportedContent"
         >
-          <ul class="navbar-nav  ">
+          <ul class="navbar-nav  " style="margin-top: 0px;">
             <li class="nav-item active">
               <a class="nav-link" href="/">Home </a>
             </li>
@@ -50,29 +51,23 @@
             <li class="nav-item">
               <a class="nav-link" href="/#/contact">Contact Us</a>
             </li>
-            <li class="nav-item">
-              <button
-                class="nav-link bg-primary border-0 mb-2 mt-0"
-                on:click={toggle}
+            <li class="nav-item" on:click={openNav}>
+              <button class="nav-link bar-toggler"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
+                  width="26"
+                  height="26"
                   fill="currentColor"
-                  class="bi bi-brightness-high-fill"
+                  class="bi bi-list"
                   viewBox="0 0 16 16"
                 >
                   <path
-                    d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
                   />
                 </svg>
               </button>
             </li>
-            <form class="form-inline">
-              <button class="btn  my-2 my-sm-0 nav_search-btn " type="submit">
-                <i class="fa fa-search" aria-hidden="true" />
-              </button>
-            </form>
           </ul>
         </div>
       </nav>
@@ -89,17 +84,17 @@
         </div>
       </div>
       <li class="nav-item active offcanvas-body-li">
-        <a class="nav-link" href="/">Home </a>
+        <a class="nav-link text-white" href="/">Home </a>
       </li>
 
       <li class="nav-item offcanvas-body-li">
-        <a class="nav-link" href="/#/services">Services</a>
+        <a class="nav-link text-white" href="/#/services">Services</a>
       </li>
       <li class="nav-item offcanvas-body-li">
-        <a class="nav-link" href="/#/about"> About</a>
+        <a class="nav-link text-white" href="/#/about"> About</a>
       </li>
       <li class="nav-item offcanvas-body-li">
-        <a class="nav-link" href="/#/contact">Contact Us</a>
+        <a class="nav-link text-white" href="/#/contact">Contact Us</a>
       </li>
     </div>
   </div>
@@ -162,6 +157,10 @@
   .HeaderPosition {
     position: sticky;
   }
+  .bar-toggler {
+    background-color: transparent;
+    border: 0px !important;
+  }
 
   .Slider-Image {
     height: 500px;
@@ -183,10 +182,14 @@
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: 040126;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 0px;
+  }
+  .nav-item:hover {
+    background-color: #ff7241;
+    color: white !important;
   }
 </style>
