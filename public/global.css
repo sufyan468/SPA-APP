@@ -112,7 +112,7 @@ a:focus {
 /*header section*/
 .hero_area {
   position: relative;
-  min-height: 100vh;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,8 +173,6 @@ a:focus {
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link,
@@ -202,8 +200,6 @@ a:focus {
   padding: 0;
   width: 37px;
   height: 42px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 .custom_nav-container .navbar-toggler span {
@@ -212,12 +208,9 @@ a:focus {
   height: 4px;
   background-color: #ffffff;
   margin: 7px 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+
   position: relative;
   border-radius: 5px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 .custom_nav-container .navbar-toggler span::before,
@@ -230,8 +223,6 @@ a:focus {
   background-color: #ffffff;
   top: -10px;
   border-radius: 5px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 .custom_nav-container .navbar-toggler span::after {
@@ -329,8 +320,7 @@ a:focus {
   background-color: #ff7241;
   color: #ffffff;
   border-radius: 16px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+
   border: none;
   margin-top: 15px;
 }
@@ -392,7 +382,7 @@ main.svelte-1h6otfa {
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-align: center;
-  transition: all 0.5s ease;
+
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
@@ -415,8 +405,6 @@ main.svelte-1h6otfa {
 
 .service_section .box .img-box img {
   width: 100%;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 .service_section .box .detail-box h5 {
@@ -444,8 +432,7 @@ main.svelte-1h6otfa {
   background-color: #ff7241;
   color: #ffffff;
   border-radius: 16px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+
   border: none;
 }
 
@@ -591,8 +578,7 @@ main.svelte-1h6otfa {
   background-color: #ff7241;
   color: #ffffff;
   border-radius: 16px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+
   border: none;
   margin-top: 15px;
 }
@@ -645,8 +631,6 @@ main.svelte-1h6otfa {
 
 .why_section .box .img-box img {
   width: 45px;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 .why_section .box .detail-box h5 {
@@ -674,8 +658,7 @@ main.svelte-1h6otfa {
   background-color: #ff7241;
   color: #ffffff;
   border-radius: 0px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+
   border: none;
 }
 
@@ -868,8 +851,7 @@ main.svelte-1h6otfa {
   background-color: #ff7241;
   color: #ffffff;
   border-radius: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+
   border: none;
   margin-top: 15px;
 }
@@ -1460,7 +1442,6 @@ p {
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem;
-  transition: box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
@@ -1763,7 +1744,6 @@ p {
   background-color: #fff;
   background-clip: padding-box;
   outline: 0;
-  transition: transform 0.3s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .offcanvas {

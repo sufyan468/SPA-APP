@@ -19,7 +19,10 @@
   <header class="header_section">
     <div class="container">
       <nav class="navbar navbar-expand-lg custom_nav-container ">
-        <a class="navbar-brand  text-white d-flex align-items-center" href="/">
+        <a
+          class="navbar-brand  text-white d-flex align-items-center"
+          href="/#/Home"
+        >
           <img
             src="https://blogger.googleusercontent.com/img/a/AVvXsEi-JWOvGCAdYsg0KcLYS5CNEfcD79S9vZVWRVDnEvdxU9Tr92Ki5Br-y6vQbpfxGahewNkPTS47EXlPkv7inyfTMXStSrrU_on-rnsCd-hAUr3XdyopommFUvaTpYFj33qtA2WsOyb8u9cflCBAoOHBSYfIIXVZeeQwmmAMAeQ1FmKMopvQemaJfNiEXA=s1200"
             alt="User"
@@ -38,7 +41,7 @@
         >
           <ul class="navbar-nav  " style="margin-top: 0px;">
             <li class="nav-item active">
-              <a class="nav-link" href="/">Home </a>
+              <a class="nav-link" href="/#/Home">Home </a>
             </li>
 
             <li class="nav-item">
@@ -84,7 +87,7 @@
         </div>
       </div>
       <li class="nav-item active offcanvas-body-li">
-        <a class="nav-link text-white" href="/">Home </a>
+        <a class="nav-link text-white" href="/#/Home">Home </a>
       </li>
 
       <li class="nav-item offcanvas-body-li">
@@ -98,39 +101,6 @@
       </li>
     </div>
   </div>
-  <section class="slider_section ">
-    <div class="container ">
-      <div class="row">
-        <div class="col-md-6 ">
-          <div class="detail-box">
-            <h1>
-              We Provide <br />
-              Softare Services
-            </h1>
-            <p class="text-white text-left">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
-              magnam, voluptates distinctio, officia architecto tenetur debitis
-              hic aspernatur libero commodi atque fugit adipisci, blanditiis
-              quidem dolorum odit voluptas? Voluptate, eveniet?
-            </p>
-            <div class="btn-box text-left">
-              <a href="#ReaMore" class="btn1"> Read More </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="img-box-Header">
-            <img
-              src="https://tutorbees.net/assets/new_ui/sub-1.svg"
-              title="New image"
-              alt="Sub 1"
-              class="Slider-Image"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 </div>
 
 <style>
@@ -185,7 +155,7 @@
     right: 0;
     background-color: 040126;
     overflow-x: hidden;
-    transition: 0.5s;
+
     padding-top: 0px;
   }
   .nav-item:hover {
